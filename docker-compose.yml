@@ -1,0 +1,11 @@
+services:
+  app-service:
+    build: ./frontend
+    ports:
+      - 5001:5000
+
+  mysql-service:
+    build: ./backend
+    ports:
+      - 3306:3306
+
